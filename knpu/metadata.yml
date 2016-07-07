@@ -2,35 +2,23 @@ title: Design Patterns from Space!
 summary: |
     We all know that building an app where spaceships battle each other
     is geek-awesomeness. But what about building that app *and*
-    learning the most powerful programming **design patterns** that exist!?
+    learning the most powerful programming **design patterns** of all time!?
     We should totally do that!
 
     Design patterns are much more than just scholarly topics: they
-    are tried-and-true solutions to problems that *we* developers
+    are time-tested solutions to problems that *we* developers
     face every single day. We'll show you the best ones, by actually
     *coding* them and seeing how they help:
 
     * Most problems already have a solution: a design pattern!
-    * You learn how and why lessons learned by other developers who have encountered the same problems and survived to the trip.
-    * They are called "Gang of Four", abbreviated GoF and their are gods in Design Patterns.
-    * You will be a Master. Learn what past masters learned
-    * You know the foundations with [oo](https://knpuniversity.com/tracks/oo), now learn the POWER of implementation about Design Patterns.
-    * Discuss with you're co-beerer about design problem knowing the names of Design Patterns.
-    * It is probably the most important things to know to be a good developer
-    * Play with Patterns.
-
-    But in fact !?
-    What is a Design Pattern?
-
-    The best definition that could be given is obviously one of the Gang of Four.
-
-    Christopher Alexander, an inspiration for many pattern enthusiasts:
-    “Each pattern describes a problem which occurs over and over again in
-    our environment, and then describes the core of the solution to that problem, in
-    such a way that you can use this solution a million times over, without ever
-    doing it the same way twice”
-
-    And so we ~~learn~~ play in case study in a significant great application… Battleship of Space of course !
+    * Creational Patterns: Abstract Factory, Singleton, Builder, etc
+    * Structural Patterns: Adapters, Bridges, Decorators & proxies!
+    * Behavioral Patterns: Commands, Iterators, Visitors, Observers, etc
+    * Delicious Patterns: Ice cream, cookies, pizza & donuts (not provided by the tutorial)
+    
+    Finally sound super hipster when talking with other programmers ("Did you see how I used the Flyweight pattern?").
+    Oh, and take your [Object-Oriented](http://knpuniversity.com/screencast/oo) skills
+    to a pro level.
 
 illustration: ~
 
