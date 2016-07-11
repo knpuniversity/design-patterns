@@ -15,12 +15,12 @@ summary: |
     * Structural Patterns: Adapters, Bridges, Decorators & proxies!
     * Behavioral Patterns: Commands, Iterators, Visitors, Observers, etc
     * Delicious Patterns: Ice cream, cookies, pizza & donuts (not provided by the tutorial)
-    
+
     Finally sound super hipster when talking with other programmers ("Did you see how I used the Flyweight pattern?").
     Oh, and take your [Object-Oriented](http://knpuniversity.com/screencast/oo) skills
     to a pro level.
 
-illustration: ~
+illustration: design-patterns.png
 
 # todo - fill these in later
 tuts_hero:
