@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
 
-use KnpU\DesignPatterns\TemplateMethod\OrnithischiaType;
-use KnpU\DesignPatterns\TemplateMethod\SaurischiaType;
+use KnpU\DesignPatterns\TemplateMethod\OrnithischiaDinosaur;
+use KnpU\DesignPatterns\TemplateMethod\SaurischiaDinosaur;
 
 require dirname(__FILE__, 3) . '/vendor/autoload.php';
 
@@ -13,13 +13,15 @@ if (!array_key_exists(1, $argv)) {
 $type = mb_strtolower($argv[1]);
 
 if (!in_array($type, ['saurischia', 'ornithischia'])) {
-    throw new \Exception(sprintf('Your type of dinosaur : "%s" is incorrect', $type));
+    throw new \RuntimeException(sprintf('Your type of dinosaur : "%s" is incorrect', $type));
 }
 
 if ($type === 'saurischia') {
-    $dinosaurType = new SaurischiaType();
+    $dinosaur = new SaurischiaDinosaur();
 } elseif ($type === 'ornithischia') {
-    $dinosaurType = new OrnithischiaType();
+    $dinosaur = new OrnithischiaDinosaur();
 }
+
+$dinosaurType = $dinosaur->doCreateDinausorType();
 
 echo $dinosaurType->getInformations();
