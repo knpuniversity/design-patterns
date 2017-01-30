@@ -22,6 +22,6 @@ if ($type === 'saurischia') {
     $dinosaur = new OrnithischiaDinosaur();
 }
 
-$dinosaurType = $dinosaur->doCreateDinausorType();
+$dinosaur->create();
 
-echo $dinosaurType->getInformations();
+echo $dinosaur->getDinosaurType()->getInformations();

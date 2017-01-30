@@ -3,9 +3,12 @@ declare(strict_types=1);
 
 namespace KnpU\DesignPatterns\TemplateMethod;
 
-class OrnithischiaDinosaur
+class OrnithischiaDinosaur extends Dinosaur
 {
-    public function doCreateDinausorType(): OrnithischiaType
+    /**
+     * {@inheritdoc}
+     */
+    public function doCreateDinausorType(): DinosaurType
     {
         return new OrnithischiaType();
     }
