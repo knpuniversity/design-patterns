@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace KnpU\DesignPatterns\TemplateMethod;
 
-class SaurischiaType
+class SaurischiaType extends DinosaurType
 {
     public function getType(): string
     {
@@ -13,10 +13,5 @@ class SaurischiaType
     public function getDescription(): string
     {
         return "It's meaning 'lizard'";
-    }
-
-    public function getInformations(): string
-    {
-        return sprintf("Type: %s\nDescription: %s\n\n", $this->getType(), $this->getDescription());
     }
 }
