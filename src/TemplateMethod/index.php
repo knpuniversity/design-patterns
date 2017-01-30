@@ -12,16 +12,16 @@ if (!array_key_exists(1, $argv)) {
 
 $type = mb_strtolower($argv[1]);
 
-if (!in_array($type, ['saurischia', 'ornithischia'])) {
+if (!in_array($type, ['saurischia', 'lizard', 'ornithischia'])) {
     throw new \RuntimeException(sprintf('Your type of dinosaur : "%s" is incorrect', $type));
 }
 
-if ($type === 'saurischia') {
+if (in_array($type, ['saurischia', 'lizard'])) {
     $dinosaur = new SaurischiaDinosaur();
 } elseif ($type === 'ornithischia') {
     $dinosaur = new OrnithischiaDinosaur();
 }
 
-$dinosaur->create();
+$dinosaur->create($type);
 
 echo $dinosaur->getDinosaurType()->getInformations();

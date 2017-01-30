@@ -12,11 +12,39 @@ abstract class Dinosaur
 
     /**
      * This is the template method.
+     *
+     * @param string $type
+     *
+     * @throws \Exception
      */
-    public function create()
+    public function create(string $type)
     {
         // Primitive Operation
-        $this->dinosaurType = $this->doCreateDinausorType();
+        $dinausorType = $this->doCreateDinausorType();
+
+        if (!$this->isDinosaurType($type)) {
+            throw new \Exception(sprintf('Your type of dinosaur : "%s" is incorrect for "%s"', $type, get_class($dinausorType)));
+        }
+
+        $this->dinosaurType = $dinausorType;
+    }
+
+    /**
+     * Check if type of dinausor is accepted.
+     *
+     * Can be override.
+     *
+     * @param string $type
+     *
+     * @return bool
+     */
+    public function isDinosaurType(string $type)
+    {
+        if (!in_array($type, ['saurischia', 'ornithischia'])) {
+            return false;
+        }
+
+        return true;
     }
 
     /**
